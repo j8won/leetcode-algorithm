@@ -12,5 +12,5 @@ var uniqueOccurrences = function(arr) {
     let values = Object.values(map);
     let set = new Set(values);
 
-    return values.length === [...set].length;
+    return values.length === set.size;
 };
