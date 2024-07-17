@@ -34,10 +34,10 @@ class MaxHeap {
 
     heapifyUp(){
         let index = this.data.length - 1;
-        while (index >= 0) {
+        while (index > 0) {
             let parentIndex = Math.floor((index-1)/2);
             if (this.data[index] < this.data[parentIndex]) break;
-            swap(index, parentIndex);
+            this.swap(index, parentIndex);
             index = parentIndex;
         }
     }
@@ -77,6 +77,7 @@ class MaxHeap {
             if (swapIndex === null) break;
 
             this.swap(index, swapIndex);
+            index = swapIndex;
         }
     }
 }
