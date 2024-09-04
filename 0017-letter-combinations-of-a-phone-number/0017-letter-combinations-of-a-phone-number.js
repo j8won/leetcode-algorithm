@@ -15,7 +15,7 @@ const keyboard = {
 }
 
 var letterCombinations = function (digits) {
-    digits = digits.split("");
+    // digits = digits.split("");
     if (digits.length === 0) return [];
 
     const result = [];
